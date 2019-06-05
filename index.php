@@ -37,7 +37,7 @@ Patient Information Managment System  </span>
     <div class="card-body px-lg-5">
 
         <!-- Form -->
-        <form class="text-center" style="color: #757575;" action="includes/home.html">
+        <form class="text-center" style="color: #757575;" action="includes/login.php" method="post">
 
             
 
@@ -45,18 +45,18 @@ Patient Information Managment System  </span>
 
             <!-- Name -->
             <div class="md-form mt-3">
-                <input type="text" id="materialSubscriptionFormPasswords" class="form-control">
-                <label for="materialSubscriptionFormPasswords">Name</label>
+                <input type="text" name="username" id="username" class="form-control">
+                <label for="username">Name</label>
             </div>
 
             <!-- E-mai -->
             <div class="md-form">
-                <input type="password" id="materialSubscriptionFormEmail" class="form-control">
-                <label for="materialSubscriptionFormEmail">Password</label>
+                <input type="password" name="password" id="password" class="form-control">
+                <label for="password">Password</label>
             </div>
 
             <!-- Sign in button -->
-            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Sign in </button>
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" name="login">Sign in </button>
 
 
         </form>

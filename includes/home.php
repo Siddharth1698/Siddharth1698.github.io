@@ -1,3 +1,12 @@
+<?php
+ ob_start();
+ include "db.php";
+
+$sql = "SELECT user_fname, user_lname, user_dob, user_uniqueid FROM users";
+$result = $connection->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +45,7 @@
       </li>
 
     <li class="nav-item active">
-        <a class="nav-link" href="addPatient.html">
+        <a class="nav-link" href="addPatient.php">
           <i class="fas fa-plus-square"></i> Add Patient
           
         </a>
@@ -44,7 +53,7 @@
 
       
        <li class="nav-item active">
-        <a class="nav-link" href="../index.html">
+        <a class="nav-link" href="../index.php">
          <i class="fab fa-instagram"></i> Logout</a>
       </li>
 
@@ -65,6 +74,7 @@
 <table class="table table-hover table-bordered results">
   <thead>
     <tr>
+      <th class="m-sm-5 ">Unique Id</th>
       <th class="m-sm-5 ">First Name</th>
       <th class="m-sm-5 ">Last Name</th>
       <th class="m-sm-5  ">DOB</th>
@@ -77,27 +87,35 @@
     </tr>
   </thead>
   <tbody>
+
+    <?php
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $uniqueid = $row["user_uniqueid"];
+        $fname =  $row["user_fname"];
+        $lname = $row["user_lname"];
+        $dob = $row["user_dob"];
+    
+
+    ?>
     <tr>
-      <td>Siddharth</th>
-      <td>M</td>
-      <td>myDob</td>
+      <th><?php echo $uniqueid; ?></th>
+      <td><?php echo $fname; ?></td>
+      <td><?php echo $lname; ?></td>
+      <td><?php echo $dob; ?></td>
       <td>myLastVisit</td>
        <td>myVisitHistory</td>
     </tr>
-     <tr>
-      <td>Tony </th>
-      <td>Stark</td>
-      <td>myDob</td>
-      <td>myLastVisit</td>
-       <td>myVisitHistory</td>
-    </tr>
-     <tr>
-      <td>Thor</th>
-      <td>Odin</td>
-      <td>myDob</td>
-      <td>myLastVisit</td>
-       <td>myVisitHistory</td>
-    </tr>
+ <?php
+
+ }
+} 
+
+?>
+
+
 
     
   </tbody>

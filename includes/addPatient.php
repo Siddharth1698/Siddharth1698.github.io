@@ -12,7 +12,20 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="../css/mdb.min.css" rel="stylesheet">
-      <script type="text/javascript" src="../js/addPatient.js"></script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+
+
+
+
 
   <!-- Your custom styles (optional) -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -21,6 +34,9 @@
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
   <link href="../css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/addPatient.css">
+        <script type="text/javascript" src="../js/addPatient.js"></script>
+
+        <script src="item-ajax.js"></script>
 </head>
 
 <body>
@@ -149,12 +165,22 @@
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">..
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+<br><br>
 
 
+<!-- Editable table -->
 
 
-  .</div>
+<!-- Material inline form -->
+
+   
+<!-- Editable table -->
+
+
+</div>
+
+
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
 
 
@@ -603,6 +629,8 @@ Ph, Email, etc.
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="../js/addPatient.js"></script>
+
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
@@ -610,3 +638,8 @@ Ph, Email, etc.
 </body>
 
 </html>
+
+
+
+
+

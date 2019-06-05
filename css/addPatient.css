@@ -22,3 +22,11 @@ footer{
 
 /* Propeller datetimepicker */
 @import "datetimepicker/css/pmd-datetimepicker.css";
+
+.pt-3-half {
+padding-top: 1.4rem;
+}
+
+.fo{
+	padding: 80px;
+}
