@@ -167,10 +167,7 @@
 
 
 <?php
-
-include "index.php";
-
-
+include "ailments.php";
 ?>
 <!-- Material inline form -->
 
@@ -634,6 +631,5 @@ Ph, Email, etc.
 </body>
 
 </html>
-
 
 
