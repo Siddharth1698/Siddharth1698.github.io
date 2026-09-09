@@ -29,6 +29,8 @@
     <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
     <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L20.5 7.5a2.1 2.1 0 0 0-3-3L5 17v3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="14" y1="6" x2="18" y2="10" stroke="currentColor" stroke-width="1.6"/></symbol>
   </defs>
 </svg>
 
@@ -48,7 +50,9 @@
       <a href="#education"><span class="idx">03</span>Education</a>
       <a href="#skills"><span class="idx">04</span>Skills</a>
       <a href="#publications"><span class="idx">05</span>Research</a>
-      <a href="#contact"><span class="idx">06</span>Contact</a>
+      <a href="#projects"><span class="idx">06</span>Projects</a>
+      <a href="#writing"><span class="idx">07</span>Writing</a>
+      <a href="#contact"><span class="idx">08</span>Contact</a>
     </nav>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" type="button">
       <svg class="icon icon-sun" width="18" height="18"><use href="#i-sun"/></svg>
@@ -282,14 +286,68 @@
 
   <section id="publications" class="section">
     <h2 class="section-title reveal"><span class="tag"><svg class="icon" width="14" height="14"><use href="#i-book"/></svg>05 / Research</span></h2>
-    <div class="pub reveal">
+    <a class="pub reveal" href="https://thesai.org/Publications/ViewPaper?Volume=12&amp;Issue=12&amp;Code=IJACSA&amp;SerialNo=115" target="_blank" rel="noopener">
       <svg class="icon" width="22" height="22"><use href="#i-book"/></svg>
-      <h3>Text to Image GANs with RoBERTa and Fine-grained Attention</h3>
+      <div>
+        <h3>Text to Image GANs with RoBERTa and Fine-grained Attention Networks</h3>
+        <p class="pub-meta">IJACSA, Vol. 12(12), 2021 &middot; with R. Aarthi, Amrita Vishwa Vidyapeetham <svg class="icon" width="13" height="13"><use href="#i-external"/></svg></p>
+      </div>
+    </a>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title reveal"><span class="tag"><svg class="icon" width="14" height="14"><use href="#i-code"/></svg>06 / Projects</span></h2>
+    <div class="project-grid reveal">
+      <a class="project-card" href="https://github.com/Siddharth1698/Analysis-of-DDoS-attack-from-Botnet-devices-using-Machine-Learning-Classifiers" target="_blank" rel="noopener">
+        <h3><svg class="icon" width="16" height="16"><use href="#i-code"/></svg>DDoS Attack Analysis via Botnet-Infected IoT Devices</h3>
+        <p>Comparing multiple ML classifiers to detect DDoS attacks from botnet-infected IoT devices.</p>
+      </a>
+      <a class="project-card" href="https://github.com/Siddharth1698/Image-Captioning-with-Inception-LSTM" target="_blank" rel="noopener">
+        <h3><svg class="icon" width="16" height="16"><use href="#i-code"/></svg>Image Captioning with Inception + LSTM</h3>
+        <p>Deep learning model combining Inception and LSTM to generate captions on the Flickr8k dataset.</p>
+      </a>
+      <a class="project-card" href="https://github.com/Siddharth1698/Spotify-Recommendation-System-using-Pyspark-and-Kafka" target="_blank" rel="noopener">
+        <h3><svg class="icon" width="16" height="16"><use href="#i-code"/></svg>Spotify Recommendation System</h3>
+        <p>Content-based music recommendation pipeline built with PySpark and Kafka.</p>
+      </a>
+      <a class="project-card" href="https://github.com/Siddharth1698/Coursu" target="_blank" rel="noopener">
+        <h3><svg class="icon" width="16" height="16"><use href="#i-code"/></svg>Coursu</h3>
+        <p>Course recommendation system that asks a few questions and suggests courses tailored to the user.</p>
+      </a>
+      <a class="project-card" href="https://github.com/Siddharth1698/ResNet-on-CIFAR-10-dataset" target="_blank" rel="noopener">
+        <h3><svg class="icon" width="16" height="16"><use href="#i-code"/></svg>ResNet-34 on CIFAR-10</h3>
+        <p>ResNet-34 built from scratch in PyTorch and trained on the CIFAR-10 dataset.</p>
+      </a>
+      <a class="project-card" href="https://github.com/Siddharth1698/Image-Processing-to-find-the-brightest-area-in-Astronomical-image-and-video-using-Kadane-s-Algorithm" target="_blank" rel="noopener">
+        <h3><svg class="icon" width="16" height="16"><use href="#i-code"/></svg>Brightest-Area Detection in Astronomical Imagery</h3>
+        <p>Applies Kadane's Algorithm to locate the brightest region in astronomical images and video.</p>
+      </a>
     </div>
+    <p class="lead reveal" style="margin-top:20px">
+      <a class="inline-link" href="https://github.com/Siddharth1698?tab=repositories" target="_blank" rel="noopener">View all 160+ repositories on GitHub <svg class="icon" width="14" height="14"><use href="#i-external"/></svg></a>
+    </p>
+  </section>
+
+  <section id="writing" class="section">
+    <h2 class="section-title reveal"><span class="tag"><svg class="icon" width="14" height="14"><use href="#i-pen"/></svg>07 / Writing</span></h2>
+    <p class="lead reveal">18 articles as a contributor on Analytics Vidhya since 2021, covering deep learning, NLP, and generative AI.</p>
+    <ul class="chip-list reveal">
+      <li class="chip">Dynamic Prompt Adaptation in Generative Models</li>
+      <li class="chip">Stock Price Prediction using LSTM</li>
+      <li class="chip">CNN &mdash; PyTorch on CIFAR-10</li>
+      <li class="chip">LSTM: Predict the Next Word</li>
+      <li class="chip">Building ResNet-34 Using PyTorch</li>
+      <li class="chip">Your First ANN Using PyTorch</li>
+      <li class="chip">Feature Extraction &amp; Embeddings in NLP</li>
+      <li class="chip">Time Series Modelling with Auto ARIMAX</li>
+    </ul>
+    <p class="lead reveal" style="margin-top:20px">
+      <a class="inline-link" href="https://www.analyticsvidhya.com/blog/author/siddharth1698/" target="_blank" rel="noopener">View all articles on Analytics Vidhya <svg class="icon" width="14" height="14"><use href="#i-external"/></svg></a>
+    </p>
   </section>
 
   <section id="contact" class="section">
-    <h2 class="section-title reveal"><span class="tag"><svg class="icon" width="14" height="14"><use href="#i-mail"/></svg>06 / Contact</span></h2>
+    <h2 class="section-title reveal"><span class="tag"><svg class="icon" width="14" height="14"><use href="#i-mail"/></svg>08 / Contact</span></h2>
     <p class="lead reveal">Always happy to talk AI, LLMs, or interesting engineering problems.</p>
     <div class="contact-grid reveal">
       <a class="contact-card" href="mailto:siddharth.m98@gmail.com">
